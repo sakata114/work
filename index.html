@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at SolveForce - Join Our Telecommunications Team</title>
+    <meta name="description" content="Join SolveForce and build the future of telecommunications. Explore career opportunities in network engineering, cybersecurity, cloud services, and enterprise solutions.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .header-content nav {
+            justify-self: end;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .header-phone {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #667eea;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .header-phone:hover {
+            color: #764ba2;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem 3rem;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .content {
+            background: white;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .positions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .position-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .position-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .position-card h3 {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .position-location {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .position-card p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .position-card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .position-card ul li {
+            padding: 0.4rem 0;
+            color: #555;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .position-card ul li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .benefits-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .benefit-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .culture-section {
+            margin-bottom: 4rem;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .culture-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .culture-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .culture-card p {
+            color: #555;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        footer p {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 968px) {
+            .positions-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .culture-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .positions-grid,
+            .benefits-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-content {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">SolveForce Careers</a>
+            <a href="tel:+18887658301" class="header-phone">(888) 765-8301</a>
+            <nav>
+                <a href="#positions">Positions</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#culture">Culture</a>
+                <a href="#apply">Apply</a>
+                <a href="https://portal.solveforce.com">Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Build the Future of Telecommunications</h1>
+        <p>Join our team of innovators delivering enterprise connectivity, cloud services, and cybersecurity solutions nationwide</p>
+        <div class="cta-buttons">
+            <a href="#positions" class="btn btn-primary">View Open Positions</a>
+            <a href="tel:+18887658301" class="btn btn-secondary">Contact HR</a>
+            <a href="https://portal.solveforce.com" class="btn btn-secondary">Portal</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="stats-section">
+                <h2 style="color: white;">SolveForce by the Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Enterprise Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50</h3>
+                        <p>States Covered</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>99.99%</h3>
+                        <p>Network Uptime</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Support Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="positions">Open Positions</h2>
+            <div class="positions-grid">
+                <div class="position-card">
+                    <h3>Network Engineer</h3>
+                    <p class="position-location">Multiple Locations / Remote</p>
+                    <p>Design and deploy fiber optic networks, SD-WAN solutions, and MPLS infrastructure for enterprise clients.</p>
+                    <ul>
+                        <li>5+ years networking experience</li>
+                        <li>CCNP or equivalent certification</li>
+                        <li>Experience with fiber optics</li>
+                        <li>BGP and MPLS expertise</li>
+                    </ul>
+                    <a href="mailto:careers@solveforce.com?subject=Network Engineer Application" class="apply-btn">Apply Now</a>
+                </div>
+
+                <div class="position-card">
+                    <h3>Cybersecurity Analyst</h3>
+                    <p class="position-location">Remote</p>
+                    <p>Monitor security operations, respond to incidents, and implement zero-trust architecture for telecommunications infrastructure.</p>
+                    <ul>
+                        <li>3+ years SOC experience</li>
+                        <li>SIEM platform expertise</li>
+                        <li>Incident response skills</li>
+                        <li>Security certifications (CISSP, CEH)</li>
+                    </ul>
+                    <a href="mailto:careers@solveforce.com?subject=Cybersecurity Analyst Application" class="apply-btn">Apply Now</a>
+                </div>
+
+                <div class="position-card">
+                    <h3>Cloud Solutions Architect</h3>
+                    <p class="position-location">Hybrid / Major Cities</p>
+                    <p>Design multi-cloud solutions integrating AWS, Azure, and GCP for enterprise telecommunications clients.</p>
+                    <ul>
+                        <li>Cloud architecture experience</li>
+                        <li>AWS/Azure certifications</li>
+                        <li>Kubernetes and containerization</li>
+                        <li>Infrastructure as Code (Terraform)</li>
+                    </ul>
+                    <a href="mailto:careers@solveforce.com?subject=Cloud Solutions Architect Application" class="apply-btn">Apply Now</a>
+                </div>
+
+                <div class="position-card">
+                    <h3>Sales Engineer</h3>
+                    <p class="position-location">Nationwide / Remote</p>
+                    <p>Provide technical expertise during sales cycle for fiber internet, SD-WAN, and unified communications solutions.</p>
+                    <ul>
+                        <li>Technical sales background</li>
+                        <li>Telecommunications knowledge</li>
+                        <li>Customer-facing experience</li>
+                        <li>Solution design skills</li>
+                    </ul>
+                    <a href="mailto:careers@solveforce.com?subject=Sales Engineer Application" class="apply-btn">Apply Now</a>
+                </div>
+
+                <div class="position-card">
+                    <h3>VoIP Engineer</h3>
+                    <p class="position-location">Remote</p>
+                    <p>Deploy and maintain enterprise VoIP systems, SIP trunking, and unified communications platforms.</p>
+                    <ul>
+                        <li>VoIP/UC experience</li>
+                        <li>SIP protocol expertise</li>
+                        <li>PBX administration</li>
+                        <li>QoS configuration</li>
+                    </ul>
+                    <a href="mailto:careers@solveforce.com?subject=VoIP Engineer Application" class="apply-btn">Apply Now</a>
+                </div>
+
+                <div class="position-card">
+                    <h3>Data Center Technician</h3>
+                    <p class="position-location">Colocation Facilities</p>
+                    <p>Manage physical infrastructure, server deployments, and network equipment in enterprise data centers.</p>
+                    <ul>
+                        <li>Data center operations</li>
+                        <li>Hardware installation</li>
+                        <li>Rack and stack experience</li>
+                        <li>Cable management</li>
+                    </ul>
+                    <a href="mailto:careers@solveforce.com?subject=Data Center Technician Application" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="benefits-section" id="benefits">
+                <h2>Comprehensive Benefits Package</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Health Coverage</h3>
+                        <p>Medical, dental, and vision insurance with employer contribution and family coverage options</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Retirement Plans</h3>
+                        <p>401(k) with company match up to 6% and financial planning resources</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Paid Time Off</h3>
+                        <p>Generous PTO policy with paid holidays and flexible vacation scheduling</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Professional Development</h3>
+                        <p>Certification reimbursement, training programs, and conference attendance support</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Remote Work Options</h3>
+                        <p>Flexible work arrangements with remote and hybrid positions available</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Career Growth</h3>
+                        <p>Clear advancement paths with internal promotion opportunities and mentorship programs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="culture-section" id="culture">
+                <h2>Our Culture & Values</h2>
+                <div class="culture-grid">
+                    <div class="culture-card">
+                        <h3>Innovation First</h3>
+                        <p>We embrace cutting-edge telecommunications technologies and empower our team to implement creative solutions. From SD-WAN to 5G integration, we're always pushing the boundaries of what's possible in enterprise connectivity.</p>
+                    </div>
+                    <div class="culture-card">
+                        <h3>Customer Excellence</h3>
+                        <p>Our clients depend on us for mission-critical telecommunications infrastructure. We maintain 99.99% uptime and provide 24/7 support because excellence isn't optional—it's our standard.</p>
+                    </div>
+                    <div class="culture-card">
+                        <h3>Team Collaboration</h3>
+                        <p>Complex telecommunications projects require coordinated expertise across network engineering, cybersecurity, and cloud architecture. We succeed together through open communication and mutual support.</p>
+                    </div>
+                    <div class="culture-card">
+                        <h3>Continuous Learning</h3>
+                        <p>The telecommunications industry evolves rapidly. We invest in our team's growth through certification programs, training workshops, and hands-on experience with emerging technologies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="benefits-section" id="apply">
+                <h2>Application Process</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>1. Apply</h3>
+                        <p>Submit your resume and cover letter for positions that match your expertise</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>2. Phone Screen</h3>
+                        <p>Initial conversation with HR to discuss your background and the role</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>3. Technical Interview</h3>
+                        <p>In-depth discussion with hiring manager about technical skills and experience</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>4. Team Interview</h3>
+                        <p>Meet potential colleagues and learn about team dynamics</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>5. Skills Assessment</h3>
+                        <p>Hands-on evaluation relevant to the position requirements</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>6. Offer</h3>
+                        <p>Receive competitive offer package and join the SolveForce team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Ready to Join Our Team?</h3>
+        <p>Contact our HR department to learn more about career opportunities at SolveForce</p>
+        <div class="contact-info">
+            <a href="tel:+18887658301">(888) 765-8301</a>
+            <a href="mailto:careers@solveforce.com">careers@solveforce.com</a>
+            <a href="https://portal.solveforce.com">Portal</a>
+            <a href="https://solveforceapp.github.io/SolveForce.com/">Documentation</a>
+        </div>
+        <p>&copy; 2025 SolveForce. All rights reserved. Equal Opportunity Employer.</p>
+    </footer>
+</body>
+</html>
